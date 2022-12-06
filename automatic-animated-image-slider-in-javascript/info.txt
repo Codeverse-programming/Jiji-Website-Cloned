@@ -1,0 +1,54 @@
+For more awesome web design code & scripts visit now:
+
+https://www.codehim.com
+
+I just need your one minute, please follow CodeHim. 
+
+Follow on Twitter: https://twitter.com/CodeHimOfficial
+Follow on Pinterest: https://www.pinterest.com/codehim/
+
+
+	Regards 
+	Asif Mughal.
+
+<div class="carousel-wrapper">
+              <span id="item-1"></span>
+              <span id="item-2"></span>
+              <span id="item-3"></span>
+              <div class="carousel-item item-1">
+                <img src="./body-images/i7.png" alt="">
+                <div class="writing">
+                  <h2>How to buy on JiJi?</h2>
+                  <a href="">Click here</a>
+                </div>
+                <a class="arrow arrow-prev" href="#item-3"></a>
+                <a class="arrow arrow-next" href="#item-2"></a>
+              </div>
+              
+              <div class="carousel-item item-2">
+                <img src="./body-images/3d5.png" alt="">
+                <div class="writing">
+                  <h2>Premium Services</h2>
+                  <a href="">You can sell more</a>
+                </div>
+                <a class="arrow arrow-prev" href="#item-1"></a>
+                <a class="arrow arrow-next" href="#item-3"></a>
+              </div>
+              
+              <div class="carousel-item item-3">
+                <img src="./body-images/3d5.png" alt="">
+                <div class="writing">
+                  <h2>Premium Services</h2>
+                  <a href="">You can sell more</a>
+                </div>
+                <a class="arrow arrow-prev" href="#item-2"></a>
+                <a class="arrow arrow-next" href="#item-1"></a>
+              </div>
+              <div class="plus">
+                <div class="why">
+                  <h4>Got something to sell?</h4>
+                  <p>+</p>
+                  <h3>Post an advert for free!</h3>
+                </div>
+              </div>
+            </div>

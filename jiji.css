@@ -1,0 +1,733 @@
+body{
+  background-color: gainsboro;
+  overflow-x: hidden;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+.jiji-wrapper{
+  width: 100%;
+}
+.jiji-container{
+  width: 100%;
+}
+.navbar{
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  background-color: rgb(5, 186, 5);
+  /* box-shadow: 0px 1px 1px black; */
+}
+nav{
+  flex: 1;
+  text-align: right;
+}
+nav ul{
+  width: 97%;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 20px;
+}
+nav ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 0.875rem;
+}
+nav ul #sell{
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  font-size: 0.875rem;
+  background-color: orange;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  border-radius: 5px;
+}
+/* .logo h1{
+  color: white;
+  margin-left: 100%;
+  font-size: 2.5rem;
+} */
+.logo img{
+  width: 40px;
+  height: 45px;
+  padding-left: 50px;
+}
+ul #sell:hover{
+  background-color: rgb(191, 125, 3);
+}
+.image-1{
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 375px;
+  background-color: rgb(9, 174, 9);
+}
+ .image{
+  width: 100%;
+  overflow: hidden;
+  /* overflow-y: hidden; */
+  height: 400px;
+  object-fit: contain;
+ }
+.image img{
+  position: relative;
+  left: 830px;
+  top: 111px;
+}
+.text-top{
+  width: 100%;
+  position: relative;
+  top: -270px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.text-top h3{
+  color:white;
+  font-weight: 200;
+  position: relative;
+  left: 100px;
+  top: 8px;
+}
+.text-top h3 span{
+  font-size: 0.875rem;
+  background-color: rgb(1, 54, 1);
+  padding: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 5px;
+  border-radius: 5px;
+  font-weight: 100;
+}
+.text-top h3 span:hover{
+  background-color: rgb(5, 175, 5);
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.search-box input{
+  width: 250%;
+  padding: 25px;
+  border: none;
+  outline: none;
+}
+.text-top input::placeholder{
+  color: grey;
+  font-size: 1rem;
+}
+.form{
+  /* border: 10px solid black; */
+  position: relative;
+  top: 100px;
+  left: -335px;
+}
+.search{
+  font-size: 2rem;
+  font-weight: 200;
+  color: green;
+  position: absolute;
+  left: 230%;
+  bottom: 20%;
+  cursor: pointer;
+}
+.man{
+  position: absolute;
+  top: 30%;
+  left: 6%;
+  object-fit: contain;
+  overflow: hidden;
+}
+.plus{
+  position: relative;
+  left: 690px;
+  z-index: -1;
+  flex: 1;
+  text-align: center;
+  background-color: orange;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 33%;
+  height: 100%;
+}
+.plus .why{
+  border-radius: 50%;
+  width: 50%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: pointer;
+}
+.plus p{
+  font-size: 12rem;
+  font-weight: 200;
+  font-family: Arial;
+  color: orange;
+  position: absolute;
+  /* top: 2%; */
+}
+.why h4{
+  position: absolute;
+  top: 7%;
+  color: white;
+  font-size: 1.2rem;
+}
+.why h3{
+  position: absolute;
+  bottom: 6%;
+  color: white;
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+.carousel-wrapper{
+  height:200px;
+  position:relative;
+  left: 55px;
+  top: 15px;
+  width:670px;
+  margin:0 auto;
+  background: linear-gradient(to right, white, rgba(95, 158, 160, 0.532));
+}
+.carousel-item{
+  position:absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  padding:25px 50px;
+  opacity:0;
+  transition: all 0.5s ease-in-out;
+}
+.writing{
+  position: absolute;
+  top: 10%;
+}
+.writing h2{
+  font-size: 3rem;
+  width: 70%;
+  color: green;
+  font-weight: bold;
+  padding-bottom: 3%;
+}
+.writing a{
+  color: black;
+  font-weight: bold;
+}
+.carousel-item img{
+  display: flex;
+  flex-direction: row;
+  height: 125%;
+  position: relative;
+  top: -20px;
+  left: 290px;
+}
+.arrow{
+  border: solid black;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 12px;
+}
+
+.arrow-prev{
+  left:10px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(135deg);
+}
+.arrow-next{
+  right:10px;
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%) rotate(-45deg);
+  }
+.light{
+  color:white;
+}
+@media (max-width: 480px) {
+      .arrow, .light .arrow {
+        background-size: 10px;
+        background-position: 10px 50%;
+      }
+    }
+
+/*Select every element*/
+[id^="item"] {
+    display: none;
+  }
+
+.item-1 h2 p {
+    z-index: 2;
+    opacity: 1;
+  }
+/* .item-3{
+  background:url('https://static.pexels.com/photos/6529/lake-kajak-kayak-large.jpg');
+   background-size:cover;
+} */
+*:target ~ .item-1 {
+    opacity: 0;
+  }
+#item-1:target ~ .item-1 {
+    opacity: 1;
+  }
+#item-2:target ~ .item-2, #item-3:target ~ .item-3 {
+    z-index: 3;
+    opacity: 1;
+}
+
+.ads-cars{
+  width: 100%;
+}
+.cars{
+  width: 80%;
+  /* border: 10px solid black; */
+}
+.cars-grid{
+  width: 68%;
+  position: absolute;
+  left: 30%;
+  margin-top: 5%;
+  /* display: grid - is the display setting
+  grid-template-columns- makes your item especially image display side by side. And the measurements set makes that possible.*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  /* border:10px solid black; */
+  /* margin-bottom: 0; */
+  height: 50vh;
+}
+.full-img{
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+.full-img img{
+  width: 90%;
+  max-width: 500px;
+}
+.full-img span{
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  font-size: 1.875rem;
+  color: white;
+  cursor: pointer;
+}
+.cars-grid img{
+  height: 50%;
+  width: 97%;
+  cursor: pointer;
+  object-fit: cover;
+  /* border-radius: 10px; */
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.car-5,.car-6,.car-7,.car-8{
+  transform: translateY(-90px);
+}
+.car-9,.car-10,.car-11,.car-12{
+  transform: translateY(-180px);
+}
+.car-13,.car-14,.car-15,.car-16{
+  transform: translateY(-270px);
+}
+.car-17,.car-18,.car-19,.car-20{
+  transform: translateY(-390px);
+}
+.car-21,.car-22,.car-23,.car-24{
+  transform: translateY(-490px);
+}
+.text-1{
+  background-color: white;
+  height: 14%;
+  width: 93%;
+  transform: translateY(-5px);
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 0;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.text-1 h5 a{
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+.text-1 h6 a{
+  font-weight: 600;
+  color: green;
+  font-size: 0.875rem;
+  text-decoration: none;
+}
+.text-1 i{
+  color: green;
+  background-color: white;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transform: translate(165px, -70px);
+}
+.text-1 i:hover{
+  box-shadow: 1px 1px 1px 1px whitesmoke;
+}
+#footer{
+  transform: translateY(2010px);
+  /* margin-top: auto; */
+}
+.nav-gallery{
+  background: rgb(51, 188, 51);
+  width: 100%;
+  /* position: absolute; */
+  margin-top: 5%;
+  /* display: grid - is the display setting
+  grid-template-columns- makes your item especially image display side by side. And the measurements set makes that possible.*/
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /* gap: 80px; */
+}
+.nav-1,.nav-2,.nav-3,.nav-4,.nav-5{
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+.nav-gallery h5{
+  color: green;
+  font-weight: 500;
+  padding-bottom: 10px;
+  font-size: 1.1rem;
+}
+.nav-gallery p{
+  line-height: 2;
+}
+.nav-gallery p a{
+  color: white;
+  text-decoration: none;
+}
+.nav-gallery .niger{
+  position: relative;
+  top: -174px;
+  left: 150px;
+}
+.car-img{
+  /* border: 10px solid black; */
+  width: 5%;
+}
+/* .hovers{
+  background-color: white;
+  width: 25%;
+  position: absolute;
+  bottom: 16%;
+  left: 3%;
+  z-index: -1;
+}
+.hover{
+  width: 25%;
+}
+.car-hover{
+  display: flex;
+} */
+.cars h1{
+  position: absolute;
+  left: 35%;
+  top: 92%;
+  font-weight: 700;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  /* background-color: yellow;
+  padding: 50px; */
+}
+/* media query begins */
+@media only screen and (max-width:1300px){
+  /* .navbar{
+    background-color: red;
+  } */
+  .ads-cars{
+    position: absolute;
+    top: 185%;
+    right: 21%;
+  }
+  .cars-grid{
+    position: absolute;
+    left: 28%;
+    width: 78%;
+  }
+  #footer{
+  transform: translateY(3010px);
+  }
+  .carousel-wrapper{
+    width: 720px;
+    /* height: 350px; */
+    position: relative;
+    left: 85px;
+  }
+  .plus{
+    position: relative;
+    left: 720px;
+  }
+  .carousel-item img{
+    position: relative;
+    left: 330px;
+  }
+  .cars h1{
+    position: absolute;
+    top: 110%;
+  }
+}
+
+@media only screen and (max-width:1250px){
+  /* .navbar{
+    background-color: rebeccapurple;
+  } */
+  .ads-cars{
+    position: absolute;
+    right: 13%;
+  }
+  .cars-grid{
+    position: absolute;
+    left: 28%;
+    top: 110%;
+    width: 76.5%;
+  }
+  .plus{
+    width: 200px;
+    position: relative;
+    left: 730px;
+  }
+  .why h3, .why h4{
+    font-size: 1rem;
+  }
+  .carousel-wrapper{
+    position: relative;
+    top: 40px;
+  }
+  .nav-gallery .niger{
+    position: relative;
+    left: 40px;
+  }
+  .cars h1{
+    position: absolute;
+    top: 120%;
+  }
+  .search-box input{
+    width: 250%;
+    position: relative;
+    left: 90px;
+    /* border: 10px solid black; */
+  }
+}
+@media only screen and (max-width:1150px){
+  /* .navbar{
+    background-color: yellow;
+  } */
+  .carousel-wrapper{
+    width: 630px;
+    position: relative;
+    left: 70px;
+  }
+  .carousel-item img{
+    position: relative;
+    left: 250px;
+  }
+  .plus{
+    position: relative;
+    left: 650px;
+  }
+  .cars-grid{
+    width: 83%;
+    position: absolute;
+    left: 26%;
+    top: 120%;
+  }
+  .nav-gallery .niger{
+    position: relative;
+    left: 5px;
+    width: 900px;
+    top: -150px;
+  }
+  .cars h1{
+    position: absolute;
+    top: 125%;
+  }
+  .search-box input{
+    width: 250%;
+    position: relative;
+    left: 150px;
+    /* border: 10px solid black; */
+  }
+}
+@media only screen and (max-width:1040px){
+  /* .navbar{
+    background-color: skyblue;
+  } */
+  .carousel-wrapper{
+    width: 600px;
+    position: relative;
+    left: 63px;
+  }
+  .carousel-item img{
+    position: relative;
+    left: 200px;
+  }
+  .plus{
+    position: relative;
+    left: 615px;
+  }
+  .image img{
+    display: none;
+  }
+  .man img{
+    display: none;
+  }
+ 
+  @media only screen and (max-width:1000px){
+    /* .navbar{
+      background-color:chartreuse;
+    } */
+    #footer{
+      transform: translateY(4100px);
+    }
+    .cars-grid{
+      margin-top: 10%;
+    }
+    .carousel-wrapper{
+      width: 550px;
+      position: relative;
+      left: 63px;
+    }
+    .writing h2{
+      font-size: 2.5rem;
+    }
+    .carousel-item img{
+      position: relative;
+      left: 180px;
+    }
+    .plus{
+      position: relative;
+      left: 550px;
+    }
+    .nav-gallery .niger{
+      position: relative;
+      left: 5px;
+      width: 770px;
+      top: -130px;
+    }
+    .search-box input{
+      width: 250%;
+      position: relative;
+      left: 60px;
+      /* border: 10px solid black; */
+    }
+  }
+}
+@media only screen and (max-width:900px){
+  /* .navbar{
+    background-color: darkred;
+  } */
+  .carousel-wrapper{
+    width: 420px;
+    position: relative;
+    left: 30px;
+  }
+  .carousel-item img{
+    height: 130px;
+    position: relative;
+    left: 160px;
+  }
+  .plus{
+    position: relative;
+    left: 425px;
+  }
+  .cars-grid{
+    width: 83%;
+  }
+  .writing h2{
+    font-size: 2.5rem;
+  }
+  .nav-gallery .niger{
+    position: relative;
+    left: 5px;
+    width: 700px;
+    top: -120px;
+  }
+  .cars h1{
+   position: relative;
+   top: 30px;
+  }
+  .search-box input{
+    width: 250%;
+    position: relative;
+    left: 60px;
+    /* border: 10px solid black; */
+  }
+  .cars-grid{
+    margin-top: 5%;
+  }
+  .carousel-wrapper{
+    display: none;
+  }
+}
+@media only screen and (max-width:800px){
+  /* .navbar{
+    background-color: crimson;
+  } */
+  #footer{
+    transform: translateY(4900px);
+  }
+  .nav-gallery .niger{
+    position: relative;
+    left: 5px;
+    width: 550px;
+    top: -80px;
+  }
+  .nav-gallery{
+    width: 80%;
+  }
+}
+@media only screen and (max-width:576px){
+  /* .navbar{
+    background-color: blue;
+  } */
+  .search-box input{
+    width: 200%;
+    position: relative;
+    left: 100px;
+    /* border: 10px solid black; */
+  }
+  .carousel-wrapper{
+    display: none;
+  }
+  .cars-grid{
+    margin-top: 20%;
+  }
+  .nav-gallery{
+    height: 700px;
+    width: 90%;
+    /* border: 10px solid black; */
+  }
+  #footer{
+    transform: translateY(4900px);
+  }
+  .nav-gallery .niger{
+    position: relative;
+    left: 5px;
+    width: 520px;
+    top: -80px;
+  }
+}
+/* media query ends */
